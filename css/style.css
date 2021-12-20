@@ -8,7 +8,7 @@
 }
 
 body > * {
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 h2 {
@@ -30,6 +30,10 @@ a {
     margin: 0 auto;
 }
 
+.list-style-none {
+    list-style: none;
+}
+
 /* Flex */
 .d-flex {
     display: flex;
@@ -46,7 +50,7 @@ a {
 /* HEADER */
 header {
     border-bottom: 1px solid #cbcbcb;
-    padding-bottom: 0;
+    padding: 1rem 2rem 0;
 }
 
 header .top .logo {
@@ -56,10 +60,6 @@ header .top .logo {
 
 header .bottom {
     padding: 1rem 0 0;
-}
-
-header .bottom ul {
-    list-style: none;
 }
 
 header .bottom ul li {
@@ -80,4 +80,22 @@ header .bottom ul li.active a {
     color: #3367d6;
 }
 
-/* MAIN */
+/* FOOTER */
+footer {
+    background-color: #f5f5f5;
+}
+
+footer .left li {
+    font-size: .8rem;
+    margin-right: 1rem;
+}
+
+footer .left li:last-child {
+    margin-right: 0;
+}
+
+footer .left li:nth-child(n+2)::before {
+    content: '-';
+    margin-right: .8rem;
+}
+

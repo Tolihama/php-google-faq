@@ -54,7 +54,7 @@
             <span class="logo">Privacy e termini</span>
         </nav>
         <nav class="bottom">
-            <ul class="d-flex">
+            <ul class="d-flex list-style-none">
                 <li>
                     <a href="#">Introduzione</a>
                 </li>
@@ -84,7 +84,23 @@
     </main>
 
     <footer>
+        <div class="container">
+            <ul class="left d-flex list-style-none">
+                <li>
+                    <a href="#">Google</a>
+                </li>
+                <li>
+                    <a href="#">Tutto su Google</a>
+                </li>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Termini</a>
+                </li>
+            </ul>
 
+        </div>
     </footer>
 </body>
 </html>
