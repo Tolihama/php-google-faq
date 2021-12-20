@@ -40,14 +40,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google FAQ</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-
+        <nav class="top d-flex aic">
+            <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo">
+            <span class="logo">Privacy e termini</span>
+        </nav>
+        <nav class="bottom">
+            <ul class="d-flex">
+                <li>
+                    <a href="#">Introduzione</a>
+                </li>
+                <li>
+                    <a href="#">Norme sulla privacy</a>
+                </li>
+                <li>
+                    <a href="#">Termini di servizio</a>
+                </li>
+                <li>
+                    <a href="#">Tecnologie</a>
+                </li>
+                <li class="active">
+                    <a href="#">Domande frequenti</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="container">
         <?php 
         foreach ($faq as $quest) {
             echo "<h2>{$quest['question']}</h2>";
@@ -55,6 +82,9 @@
         }       
         ?>
     </main>
-    
+
+    <footer>
+
+    </footer>
 </body>
 </html>
